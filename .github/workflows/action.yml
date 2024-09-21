@@ -30,7 +30,7 @@ jobs:
 
           - uses: actions/checkout@master
           - name: Build
-            uses: houseabsolute/actions-rust-cross@v0.0.14
+            uses: houseabsolute/actions-rust-cross@musl-g++
             with:
               target: ${{ matrix.TARGET }}
               args: "--release"
